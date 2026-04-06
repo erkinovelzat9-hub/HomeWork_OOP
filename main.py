@@ -1,16 +1,39 @@
-# This is a sample Python script.
+class Hero:
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def __init__(self, name, level, health, strength):
+        self.name = name
+        self.level = level
+        self.health = health
+        self.strength = strength
+
+    def greet(self):
+        print(f"Привет, я {self.name}, мой уровень: {self.level}")
+
+    def attack(self):
+        print(f"{self.name} наносит удар!")
+        self.strength -= 1
+        print(f"сила героя: {self.strength}")
+
+    def rest(self):
+        print(f"{self.name} отдыхает..")
+        self.health += 1
+        print(f"Здоровье героя: {self.health}\n")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Первый объект
+Kirito = Hero("Кирито", 50, 100, 500)
+print(f"Имя: {Kirito.name} \nУровень: {Kirito.level} \nЗдоровья: {Kirito.health}, "
+      f"\nсила: {Kirito.strength}")
+Kirito.greet()
+Kirito.attack()
+Kirito.rest()
+
+# Второй объект
+Haruna = Hero("Харуна", 10, 50, 100 )
+print(f"Имя: {Haruna.name} \nУровень: {Haruna.level} \nЗдоровья: {Haruna.health}, "
+      f"\nсила: {Haruna.strength}")
+Haruna.greet()
+Haruna.attack()
+Haruna.rest()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

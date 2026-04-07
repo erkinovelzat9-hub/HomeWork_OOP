@@ -11,13 +11,10 @@ class Hero:
     def greet(self):
         print(f"Привет, я {self.name}, мой уровень: {self.level}")
 
-
     def attack(self):
         print(f"{self.name} наносит удар!")
         self.strength -= 1
         print(f"сила героя: {self.strength}")
-
-
 
     def rest(self):
         print(f"{self.name} отдыхает..")

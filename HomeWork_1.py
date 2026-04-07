@@ -1,12 +1,10 @@
 class Hero:
 
-
     def __init__(self, name, level, health, strength):
         self.name = name
         self.level = level
         self.health = health
         self.strength = strength
-
 
     def greet(self):
         print(f"Привет, я {self.name}, мой уровень: {self.level}")

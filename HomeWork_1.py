@@ -34,5 +34,7 @@ print(f"Имя: {Haruna.name} \nУровень: {Haruna.level} \nЗдоровь�
 Haruna.greet()
 Haruna.attack()
 Haruna.rest()
+Haruna.rest()
+
 
 

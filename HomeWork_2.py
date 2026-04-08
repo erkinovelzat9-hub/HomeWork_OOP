@@ -20,23 +20,10 @@ class Hero:
         print(f"Здоровье героя увеличился.\n"
               f"Здоровье: {self.health}")
 
-# Дочерний класс (Воин)
-class Warrior(Hero):
-    def __init__(self, stamina):
-        self.stamina = stamina
-
-
-# Дочерний класс (Маг)
-class Mage(Hero):
-    def __init__(self, mana):
-        self.mana = mana
+#
 
 
 
-class Assassin(Hero):
-
-
-    def
 
 
 
